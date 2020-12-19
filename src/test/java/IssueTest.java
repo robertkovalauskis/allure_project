@@ -12,7 +12,7 @@ public class IssueTest {
     private final static String REPOSITORY = "robertkovalauskis/qa_guru_4_allure_homework";
     private final static String USER = "robertkovalauskis";
     private final static int ISSUE_NUMBER = 1;
-    private final static String PASSWORD = "";
+    private final static String PASSWORD = "nh2iQKNZsYNxpdz";
 
     @BeforeAll
     static void setup() {
@@ -27,8 +27,8 @@ public class IssueTest {
 
         //Login
         $("a[href='/login']").click();
-        $("#login_field").sendKeys(USER);
-        $("#password").sendKeys(PASSWORD);
+        $("#login_field").setValue(USER);
+        $("#password").setValue(PASSWORD);
         $(".btn.btn-primary.btn-block").click();
 
         //Enter repository
@@ -36,7 +36,7 @@ public class IssueTest {
 
         //Transfer to Issues
         $("span[data-content='Issues']").click();
-        $(withText("#" + ISSUE_NUMBER)).should(Condition.exist);
+        $(withText("#" + ISSUE_NUMBER)).should(Condition.visible);
 
         //Create New Issue
         $("a.btn.btn-primary").click();
@@ -49,5 +49,7 @@ public class IssueTest {
         $$(".name").find(text("bug")).click();
         $(withText("Labels")).click();
         $$(".btn.btn-primary").find(text("Submit new issue")).click();
+        // Assertion
+        $(withText("#" + ISSUE_NUMBER)).should(Condition.visible);
     }
 }

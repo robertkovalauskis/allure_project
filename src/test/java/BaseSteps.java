@@ -18,7 +18,7 @@ public class  BaseSteps{
     @Step("Search for repository ${name}")
     public void searchForRepository(final String name) {
         $(".header-search-input").click();
-        $(".header-search-input").sendKeys(name);
+        $(".header-search-input").setValue(name);
         $(".header-search-input").submit();
     }
 
@@ -34,6 +34,6 @@ public class  BaseSteps{
 
     @Step("Check Issue with the ${number}")
     public void shouldSeeIssueWithNumber(final int number) {
-        $(withText("#" + ISSUE_NUMBER)).should(Condition.exist);
+        $(withText("#" + ISSUE_NUMBER)).should(Condition.visible);
     }
 }

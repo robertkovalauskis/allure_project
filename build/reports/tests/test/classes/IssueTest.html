@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">50.947s</div>
+<div class="counter">41.095s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,9 +78,10 @@
 <span class="code">
 <pre>Element not found {By.linkText: robertkovalauskis/qa_guru_4_allure_homework}
 Expected: visible or transparent: visible or have css value opacity=0
-Page source: file:/C:/Users/rober/IdeaProjects/Roberts_Allure_Homework/build/reports/tests/1606675404063.0.html
+Screenshot: file:/C:/Users/rober/IdeaProjects/qa_guru_4_allure_homework/build/reports/tests/1608380518960.0.png
+Page source: file:/C:/Users/rober/IdeaProjects/qa_guru_4_allure_homework/build/reports/tests/1608380518960.0.html
 Timeout: 4 s.
-Caused by: WebDriverException: chrome not reachable
+Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;robertkovalauskis/qa_guru_4_allure_homework&quot;}
 	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:37)
 	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:100)
 	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:65)
@@ -182,13 +183,14 @@ Caused by: WebDriverException: chrome not reachable
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=87.0.4280.66)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;robertkovalauskis/qa_guru_4_allure_homework&quot;}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ROBERT', ip: '192.168.8.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.7'
+System info: host: 'ROBERT', ip: '192.168.50.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\rober\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0463f36877c491f92c02f622e3f53f00
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\rober\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52874}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dd057182f4471b37bf55343bd872d777
 *** Element info: {Using=link text, value=robertkovalauskis/qa_guru_4_allure_homework}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -224,7 +226,7 @@ Session ID: 0463f36877c491f92c02f622e3f53f00
 </thead>
 <tr>
 <td class="failures">searchForIssue()</td>
-<td class="failures">50.947s</td>
+<td class="failures">41.095s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -232,15 +234,12 @@ Session ID: 0463f36877c491f92c02f622e3f53f00
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 16634
+<pre>Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 21826
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Nov 29, 2020 8:43:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Dec 19, 2020 2:21:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1606675395.828][WARNING]: Timed out connecting to Chrome, retrying...
-[1606675408.072][WARNING]: Timed out connecting to Chrome, retrying...
-[1606675420.088][WARNING]: Timed out connecting to Chrome, retrying...
 </pre>
 </span>
 </div>
@@ -252,7 +251,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.3</a> at 29 Nov 2020, 20:43:49</p>
+<a href="http://www.gradle.org">Gradle 6.3</a> at 19 Dec 2020, 14:22:00</p>
 </div>
 </div>
 </body>
